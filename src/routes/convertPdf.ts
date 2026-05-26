@@ -55,14 +55,7 @@ router.get("/", async (req, res) => {
 
   const mdContent = await mdResponse.text();
 
-  let pdf;
-  try {
-    pdf = await mdToPdf({ content: mdContent });
-  } catch (error) {
-    const message = error instanceof Error ? error.message : String(error);
-    res.render("error", { message: "Error: " + message, error });
-    return;
-  }
+  const pdf = await mdToPdf({ content: mdContent });
 
   if (!pdf?.content) {
     res.render("error", {
