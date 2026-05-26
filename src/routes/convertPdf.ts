@@ -55,7 +55,11 @@ router.get("/", async (req, res) => {
 
   const mdContent = await mdResponse.text();
 
-  const pdf = await mdToPdf({ content: mdContent });
+  const pdf = await mdToPdf(
+    { content: mdContent },
+    // Stop error "No usable sandbox!"
+    { launch_options: { args: ["--no-sandbox"] } },
+  );
 
   if (!pdf?.content) {
     res.render("error", {
