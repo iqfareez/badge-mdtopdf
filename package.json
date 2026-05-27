@@ -3,15 +3,27 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "build": "tsc",
+    "dev": "tsx watch src/app.ts",
+    "start": "node ./dist/app.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "jade": "~1.11.0",
-    "morgan": "~1.9.1",
-    "node-fetch": "^2.6.9"
+    "cookie-parser": "~1.4.7",
+    "debug": "~4.4.3",
+    "express": "~5.2.1",
+    "http-errors": "~2.0.1",
+    "md-to-pdf": "^5.2.5",
+    "morgan": "~1.10.1",
+    "node-fetch": "^3.3.2",
+    "pug": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.10",
+    "@types/express": "^5.0.5",
+    "@types/http-errors": "^2.0.5",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   }
 }
