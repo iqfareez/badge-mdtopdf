@@ -2,33 +2,21 @@
 
 With just one click, you can easily convert any markdown file to a PDF document!
 
-**Try it!**\
-[![Download as PDF Button](https://img.shields.io/badge/Download%20AS%20pdf-EF3939?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&color=black&labelColor=ec1c24)](https://mdtopdf.up.railway.app/convertPdf?url=https://raw.githubusercontent.com/iqfareez/badge-mdtopdf/master/README.md)
+**Try it!**
+
+[![Download as PDF Button](https://img.shields.io/badge/Download%20AS%20pdf-EF3939?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&color=black&labelColor=ec1c24)](https://mdtopdf.iqfareez.com/convertPdf?url=https://raw.githubusercontent.com/iqfareez/badge-mdtopdf/master/README.md)
 
 ## Getting Started
 
-Install dependencies:
-
 ```bash
 pnpm install
-```
-
-Run in development mode with TypeScript watch:
-
-```bash
 pnpm dev
 ```
 
-Build TypeScript:
+You can also run via Docker:
 
 ```bash
-pnpm build
-```
-
-Run production build:
-
-```bash
-pnpm start
+docker compose up
 ```
 
 ## Usage
@@ -36,7 +24,7 @@ pnpm start
 Copy the badges link:
 
 ```text
-[![Download as PDF Button](https://img.shields.io/badge/Download%20AS%20pdf-EF3939?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&color=black&labelColor=ec1c24)](https://mdtopdf.up.railway.app/convertPdf?url=<url>)
+[![Download as PDF Button](https://img.shields.io/badge/Download%20AS%20pdf-EF3939?style=for-the-badge&logo=adobeacrobatreader&logoColor=white&color=black&labelColor=ec1c24)](https://mdtopdf.iqfareez.com/convertPdf?url=<url>)
 ```
 
 Replace the **`<url>`** with your GitHub's markdown file url. You can also supply raw file URL.
